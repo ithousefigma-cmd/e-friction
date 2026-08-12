@@ -22,9 +22,17 @@ DEBUG = env_bool('DEBUG', False)
 ALLOWED_HOSTS = [
     "healthcheck.railway.app",
     ".up.railway.app",
+    ".railway.app",
+    "e-friction.uz",
+    "www.e-friction.uz",
     "localhost",
     "127.0.0.1",
 ]
+
+# Railway provides the public domain automatically.
+railway_public_domain = os.getenv("RAILWAY_PUBLIC_DOMAIN")
+if railway_public_domain:
+    ALLOWED_HOSTS.append(railway_public_domain)
 
 CSRF_TRUSTED_ORIGINS = [
     'http://e-friction.uz',
