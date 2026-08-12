@@ -20,12 +20,10 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-change-me-in-production')
 DEBUG = env_bool('DEBUG', False)
 
 ALLOWED_HOSTS = [
-    host.strip()
-    for host in os.getenv(
-        'ALLOWED_HOSTS',
-        'e-friction.uz,www.e-friction.uz,localhost,127.0.0.1,.up.railway.app,.railway.app',
-    ).split(',')
-    if host.strip()
+    "healthcheck.railway.app",
+    ".up.railway.app",
+    "localhost",
+    "127.0.0.1",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
