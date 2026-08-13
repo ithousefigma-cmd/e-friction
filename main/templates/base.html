@@ -76,6 +76,10 @@
         <a href="#quality" class="nav-link">Sifat</a>
         <a href="#certificates" class="nav-link">Sertifikatlar</a>
         <a href="#contact" class="nav-link">Aloqa</a>
+        <select id="languageSelector" class="language-selector">
+          <option value="uz">O'zbek</option>
+          <option value="ru">Русский</option>
+        </select>
       </div>
     </nav>
   </header>
@@ -147,6 +151,7 @@ kocha Nayman-30..</p>
   <button class="float-btn whatsapp-btn" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></button>
   <button class="float-btn call-btn" aria-label="Call us"><i class="fas fa-phone"></i></button>
 
+  <script src="{% static 'languages.js' %}"></script>
   <script src="{% static 'script.js' %}"></script>
   {% block extra_scripts %}{% endblock %}
 </body>
