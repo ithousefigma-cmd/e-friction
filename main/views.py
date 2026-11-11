@@ -1,9 +1,6 @@
-from pathlib import Path
-
 from django.conf import settings
 from django.http import HttpResponse
 from django.shortcuts import render
-from django.templatetags.static import static
 from django.views.decorators.http import require_GET
 
 from .models import Product, Certificate
@@ -23,40 +20,11 @@ def _serialize_product(product):
     }
 
 
-def _build_static_products():
-    static_dir = Path(settings.BASE_DIR) / 'static' / 'img'
-    if not static_dir.exists():
-        return []
-
-    product_files = []
-    for file_path in sorted(static_dir.iterdir()):
-        if file_path.is_file() and file_path.suffix.lower() in {'.png', '.jpg', '.jpeg', '.webp'}:
-            product_files.append(file_path)
-
-    products = []
-    for file_path in product_files:
-        title = file_path.stem.strip()
-        products.append({
-            'title': title,
-            'description': f'{title} premium to\'xtatish yostiqchasi.',
-            'image_url': static(f'img/{file_path.name}'),
-            'button_text': 'Batafsil',
-        })
-
-    return products
-
-
 @require_GET
 def home(request):
-    db_products = [
+    products = [
         _serialize_product(product)
         for product in Product.objects.order_by('created_at')
-    ]
-    static_products = _build_static_products()
-
-    seen_titles = {product['title'] for product in db_products}
-    products = db_products + [
-        product for product in static_products if product['title'] not in seen_titles
     ]
 
     certificates = Certificate.objects.all()
