@@ -235,7 +235,13 @@ const switchLanguage = (lang) => {
     if (attribute) {
       attribute.split(/\s+/).forEach((name) => element.setAttribute(name, translation));
     } else {
-      element.textContent = translation;
+      const textNodes = Array.from(element.childNodes).filter((node) => node.nodeType === Node.TEXT_NODE);
+      if (textNodes.length) {
+        textNodes[0].nodeValue = translation;
+        textNodes.slice(1).forEach((node) => node.remove());
+      } else {
+        element.insertBefore(document.createTextNode(translation), element.firstChild);
+      }
     }
   });
 };
