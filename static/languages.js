@@ -10,6 +10,7 @@ const translations = {
     'nav-certificates': 'Sertifikatlar',
     'nav-contact': 'Aloqa',
     'toggle-aria': 'Menyuni ochish',
+    'page-title': 'E-Friction | Premium to\'xtatish yostiqchalari ishlab chiqaruvchi',
     
     // Sections
     'about-label': 'E-Friction haqida',
@@ -55,6 +56,50 @@ const translations = {
     // Footer
     'footer-desc': 'Global to\'xtatish yostiqchalari ishlab chiqarish, premium sifat, sertifikatlangan texnologiya va ishonchli ishlash.',
     'footer-links': 'Tezkor havolalar',
+    'footer-address': 'O\'zbekiston Respublikasi, Andijon viloyati, Andijon shahri, kocha Nayman-30.',
+    'footer-phone-label': '+998 90 381 02 00',
+    'footer-copyright': '© 2026 E-Friction. Barcha huquqlar himoyalangan.',
+    'feature-materials': 'Premium materiallar',
+    'feature-oem': 'OEM sifat',
+    'feature-lifetime': 'Uzoq umr',
+    'feature-heat': 'Issiqlikka chidamlilik',
+    'feature-reliability': 'Ishonchli ishlash',
+    'feature-standards': 'Xalqaro standartlar',
+    'qc-label': 'Sifat nazorati',
+    'qc-title': 'Har bosqichda ishonchli tekshiruv.',
+    'qc-desc': 'Bizning qat\'iy sifat nazorati dasturimiz har bir mahsulot mijozlarga yetib borguncha xavfsizlik, chidamlilik va ishlash mezonlariga javob berishini ta\'minlaydi.',
+    'qc-raw': 'Xom ashyo tekshiruvi',
+    'qc-lab': 'Laboratoriya sinovlari',
+    'qc-production': 'Ishlab chiqarish nazorati',
+    'qc-final': 'Yakuniy inspeksiya',
+    'qc-iso': 'ISO sifat standartlari',
+    'qc-image-alt': 'Sifat nazorati',
+    'products-label': 'Mahsulotlar',
+    'products-title': 'Tanlangan to\'xtatish yostiqchalari',
+    'certificates-label': 'Sertifikatlar',
+    'certificates-title': 'Rasmiy tasdiqlangan sertifikatlar',
+    'certificate-akt2': 'AKT 2',
+    'certificate-akt': 'AKT',
+    'certificate-dcs': 'DCS',
+    'certificate-condition': 'Состояние',
+    'certificate-technical': 'Технические условия',
+    'contact-title': 'Bog\'lanish',
+    'contact-desc': 'Biz bilan bog\'lanish uchun quyidagi ma\'lumotni yuboring.',
+    'contact-email': 'Email yuborish',
+    'search-title': 'E-Frictionni qidiring',
+    'search-placeholder': 'Mahsulot yoki xizmat nomini yozing...',
+    'search-button': 'Qidirish',
+    'search-close': 'Qidiruvni yopish',
+    'lightbox-close': 'Rasmni yopish',
+    'back-to-top': 'Yuqoriga qaytish',
+    'whatsapp-label': 'WhatsApp orqali yozish',
+    'call-label': 'Bizga qo\'ng\'iroq qilish',
+    'social-linkedin': 'LinkedIn',
+    'social-facebook': 'Facebook',
+    'social-twitter': 'Twitter',
+    'social-instagram': 'Instagram',
+    'form-invalid': 'Iltimos, barcha maydonlarni to\'liq va to\'g\'ri to\'ldiring.',
+    'form-success': 'Rahmat! Xabaringiz muvaffaqiyatli yuborildi.',
   },
   ru: {
     // Navigation
@@ -66,6 +111,7 @@ const translations = {
     'nav-certificates': 'Сертификаты',
     'nav-contact': 'Контакты',
     'toggle-aria': 'Открыть меню',
+    'page-title': 'E-Friction | Производитель премиальных тормозных колодок',
     
     // Sections
     'about-label': 'Об E-Friction',
@@ -111,77 +157,91 @@ const translations = {
     // Footer
     'footer-desc': 'Глобальное производство тормозных колодок, премиальное качество, сертифицированные технологии и надежная работа.',
     'footer-links': 'Быстрые ссылки',
+    'footer-address': 'Республика Узбекистан, Андижанская область, город Андижан, улица Найман, 30.',
+    'footer-phone-label': '+998 90 381 02 00',
+    'footer-copyright': '© 2026 E-Friction. Все права защищены.',
+    'feature-materials': 'Премиальные материалы',
+    'feature-oem': 'Качество OEM',
+    'feature-lifetime': 'Долгий срок службы',
+    'feature-heat': 'Термостойкость',
+    'feature-reliability': 'Надежная работа',
+    'feature-standards': 'Международные стандарты',
+    'qc-label': 'Контроль качества',
+    'qc-title': 'Надежная проверка на каждом этапе.',
+    'qc-desc': 'Наша строгая программа контроля качества гарантирует, что каждый продукт соответствует требованиям безопасности, долговечности и производительности до передачи клиенту.',
+    'qc-raw': 'Проверка сырья',
+    'qc-lab': 'Лабораторные испытания',
+    'qc-production': 'Контроль производства',
+    'qc-final': 'Итоговая проверка',
+    'qc-iso': 'Стандарты качества ISO',
+    'qc-image-alt': 'Контроль качества',
+    'products-label': 'Продукция',
+    'products-title': 'Избранные тормозные колодки',
+    'certificates-label': 'Сертификаты',
+    'certificates-title': 'Официально подтвержденные сертификаты',
+    'certificate-akt2': 'АКТ 2',
+    'certificate-akt': 'АКТ',
+    'certificate-dcs': 'DCS',
+    'certificate-condition': 'Состояние',
+    'certificate-technical': 'Технические условия',
+    'contact-title': 'Связаться с нами',
+    'contact-desc': 'Напишите нам, используя указанные ниже контактные данные.',
+    'contact-email': 'Написать по электронной почте',
+    'search-title': 'Поиск по E-Friction',
+    'search-placeholder': 'Введите название продукта или услуги...',
+    'search-button': 'Искать',
+    'search-close': 'Закрыть поиск',
+    'lightbox-close': 'Закрыть изображение',
+    'back-to-top': 'Вернуться наверх',
+    'whatsapp-label': 'Написать в WhatsApp',
+    'call-label': 'Позвонить нам',
+    'social-linkedin': 'LinkedIn',
+    'social-facebook': 'Facebook',
+    'social-twitter': 'Twitter',
+    'social-instagram': 'Instagram',
+    'form-invalid': 'Пожалуйста, заполните все поля полностью и правильно.',
+    'form-success': 'Спасибо! Ваше сообщение успешно отправлено.',
   }
 };
 
 // Language switcher
 const languageSelector = document.getElementById('languageSelector');
-let currentLanguage = localStorage.getItem('language') || 'uz';
-
-// Set initial language
-if (languageSelector) {
-  languageSelector.value = currentLanguage;
-}
+const supportedLanguages = Object.keys(translations);
+const storedLanguage = localStorage.getItem('language');
+let currentLanguage = supportedLanguages.includes(storedLanguage) ? storedLanguage : 'uz';
 
 // Function to update the page language
 const switchLanguage = (lang) => {
+  if (!supportedLanguages.includes(lang)) {
+    return;
+  }
+
   currentLanguage = lang;
   localStorage.setItem('language', lang);
-  
-  // Update HTML lang attribute
   document.documentElement.lang = lang;
-  
-  // Update text direction if needed
-  if (lang === 'ru') {
-    document.documentElement.dir = 'ltr';
+
+  if (languageSelector) {
+    languageSelector.value = lang;
   }
-  
-  // Update all elements with data-i18n attribute
-  const elements = document.querySelectorAll('[data-i18n]');
-  elements.forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (translations[lang] && translations[lang][key]) {
-      if (el.tagName === 'INPUT' || el.tagName === 'BUTTON') {
-        el.placeholder = translations[lang][key];
-        el.value = translations[lang][key];
-      } else {
-        el.textContent = translations[lang][key];
-      }
+
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    const key = element.getAttribute('data-i18n');
+    const translation = translations[lang][key];
+    if (translation === undefined) {
+      return;
+    }
+
+    const attribute = element.getAttribute('data-i18n-attribute');
+    if (attribute) {
+      attribute.split(/\s+/).forEach((name) => element.setAttribute(name, translation));
+    } else {
+      element.textContent = translation;
     }
   });
-  
-  // Update nav links
-  const navLinks = document.querySelectorAll('.nav-link');
-  const navTexts = ['nav-home', 'nav-about', 'nav-products', 'nav-process', 'nav-quality', 'nav-certificates', 'nav-contact'];
-  navLinks.forEach((link, index) => {
-    if (navTexts[index] && translations[lang][navTexts[index]]) {
-      link.textContent = translations[lang][navTexts[index]];
-    }
-  });
-  
-  // Dispatch custom event for page reload if needed
-  window.dispatchEvent(new CustomEvent('languageChanged', { detail: { language: lang } }));
 };
 
-// Event listener for language selector
 if (languageSelector) {
-  languageSelector.addEventListener('change', (e) => {
-    switchLanguage(e.target.value);
-  });
+  languageSelector.addEventListener('change', (event) => switchLanguage(event.target.value));
 }
 
-// Initialize language on page load
-document.addEventListener('DOMContentLoaded', () => {
-  switchLanguage(currentLanguage);
-});
-
-// Reinitialize on language change (in case content is updated dynamically)
-window.addEventListener('languageChanged', () => {
-  const navLinks = document.querySelectorAll('.nav-link');
-  const navTexts = ['nav-home', 'nav-about', 'nav-products', 'nav-process', 'nav-quality', 'nav-certificates', 'nav-contact'];
-  navLinks.forEach((link, index) => {
-    if (navTexts[index] && translations[currentLanguage][navTexts[index]]) {
-      link.textContent = translations[currentLanguage][navTexts[index]];
-    }
-  });
-});
+switchLanguage(currentLanguage);

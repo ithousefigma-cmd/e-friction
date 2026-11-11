@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{% block title %}E-Friction | Premium to'xtatish yostiqchalari ishlab chiqaruvchi{% endblock %}</title>
+  <title data-i18n="page-title">{% block title %}E-Friction | Premium to'xtatish yostiqchalari ishlab chiqaruvchi{% endblock %}</title>
   <meta name="description" content="E-Friction - premium to'xtatish yostiqchalari va ishqalanish yechimlari ishlab chiqaruvchi. Sertifikatlangan sifat nazorati, OEM standartlar va Yevropa, Osiyo, Afrika hamda Amerikaga global yetkazib berish." />
   <meta name="keywords" content="to'xtatish yostiqchalari, ishqalanish yechimlari, avtomobil komponentlari, E-Friction, brake pads, ishlab chiqarish, sifat nazorati, OEM, yetkazib berish" />
   <meta name="robots" content="index, follow" />
@@ -38,7 +38,7 @@
     "logo": "https://e-friction.uz/static/image.png",
     "description": "Premium to'xtatish yostiqchalari va ishqalanish yechimlari ishlab chiqaruvchi.",
     "telephone": "+998 90 381 02 00",
-    "email": "islobekabdujabborov@gmail.com",
+    "email": "ithousefigma@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "UZ",
@@ -65,17 +65,17 @@
   <header class="header" id="header">
     <nav class="navbar container" id="navbar">
       <a href="#home" class="logo">E<span>-Friction</span></a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menyuni ochish">
+      <button class="nav-toggle" id="navToggle" aria-label="Menyuni ochish" data-i18n="toggle-aria" data-i18n-attribute="aria-label">
         <span class="nav-toggle-icon" aria-hidden="true"></span>
       </button>
       <div class="nav-menu" id="navMenu">
-        <a href="#home" class="nav-link active">Bosh sahifa</a>
-        <a href="#about" class="nav-link">Biz haqimizda</a>
-        <a href="#products" class="nav-link">Mahsulotlar</a>
-        <a href="#process" class="nav-link">Ishlab chiqarish</a>
-        <a href="#quality" class="nav-link">Sifat</a>
-        <a href="#certificates" class="nav-link">Sertifikatlar</a>
-        <a href="#contact" class="nav-link">Aloqa</a>
+        <a href="#home" class="nav-link active" data-i18n="nav-home">Bosh sahifa</a>
+        <a href="#about" class="nav-link" data-i18n="nav-about">Biz haqimizda</a>
+        <a href="#products" class="nav-link" data-i18n="nav-products">Mahsulotlar</a>
+        <a href="#process" class="nav-link" data-i18n="nav-process">Ishlab chiqarish</a>
+        <a href="#quality" class="nav-link" data-i18n="nav-quality">Sifat</a>
+        <a href="#certificates" class="nav-link" data-i18n="nav-certificates">Sertifikatlar</a>
+        <a href="#contact" class="nav-link" data-i18n="nav-contact">Aloqa</a>
         <select id="languageSelector" class="language-selector">
           <option value="uz">O'zbek</option>
           <option value="ru">Русский</option>
@@ -92,64 +92,62 @@
     <div class="container footer-grid">
       <div class="footer-about">
         <a href="#home" class="logo logo-footer">E<span>-Friction</span></a>
-        <p>Global to'xtatish yostiqchalari ishlab chiqarish, premium sifat, sertifikatlangan texnologiya va ishonchli ishlash.</p>
+        <p data-i18n="footer-desc">Global to'xtatish yostiqchalari ishlab chiqarish, premium sifat, sertifikatlangan texnologiya va ishonchli ishlash.</p>
       </div>
       <div class="footer-links">
-        <h4>Tezkor havolalar</h4>
-        <a href="#about">Biz haqimizda</a>
-        <a href="#products">Mahsulotlar</a>
-        <a href="#quality">Sifat</a>
-        <a href="#contact">Aloqa</a>
+        <h4 data-i18n="footer-links">Tezkor havolalar</h4>
+        <a href="#about" data-i18n="nav-about">Biz haqimizda</a>
+        <a href="#products" data-i18n="nav-products">Mahsulotlar</a>
+        <a href="#quality" data-i18n="nav-quality">Sifat</a>
+        <a href="#contact" data-i18n="nav-contact">Aloqa</a>
       </div>
       <div class="footer-links">
-        <h4>Mahsulotlar</h4>
+        <h4 data-i18n="nav-products">Mahsulotlar</h4>
         <a href="#products">LBU1200</a>
         <a href="#products">UPA 60/80</a>
         <a href="#products">AK-60</a>
         <a href="#products">A-50M</a>
       </div>
       <div class="footer-contact">
-        <h4>Aloqa</h4>
-        <p><i class="fas fa-map-marker-alt"></i> O'zbekiston Respublikasi,
-Andijon viloyati, Andijon shahri,
-kocha Nayman-30..</p>
-        <p><i class="fas fa-phone"></i>+998 90 381 02 00</p>
-        <p><i class="fas fa-envelope"></i>islobekabdujabborov@gmail.com</p>
+        <h4 data-i18n="nav-contact">Aloqa</h4>
+        <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer-address">O'zbekiston Respublikasi, Andijon viloyati, Andijon shahri, kocha Nayman-30.</span></p>
+        <p><i class="fas fa-phone"></i><span data-i18n="footer-phone-label">+998 90 381 02 00</span></p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:ithousefigma@gmail.com">ithousefigma@gmail.com</a></p>
         <div class="social-icons">
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn" data-i18n="social-linkedin" data-i18n-attribute="aria-label"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook" data-i18n="social-facebook" data-i18n-attribute="aria-label"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter" data-i18n="social-twitter" data-i18n-attribute="aria-label"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram" data-i18n="social-instagram" data-i18n-attribute="aria-label"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 E-Friction. Barcha huquqlar himoyalangan.</p>
+      <p data-i18n="footer-copyright">© 2026 E-Friction. Barcha huquqlar himoyalangan.</p>
     </div>
   </footer>
 
   <div class="search-popup" id="searchPopup">
     <div class="search-content">
-      <button class="close-popup" id="closeSearch" aria-label="Qidiruvni yopish"><i class="fas fa-times"></i></button>
-      <h3>E-Frictionni qidiring</h3>
+      <button class="close-popup" id="closeSearch" aria-label="Qidiruvni yopish" data-i18n="search-close" data-i18n-attribute="aria-label"><i class="fas fa-times"></i></button>
+      <h3 data-i18n="search-title">E-Frictionni qidiring</h3>
       <form action="#">
-        <input type="search" placeholder="Mahsulot yoki xizmat nomini yozing..." aria-label="Search" />
-        <button type="submit" class="btn btn-primary">Qidirish</button>
+        <input type="search" placeholder="Mahsulot yoki xizmat nomini yozing..." aria-label="Qidirish" data-i18n="search-placeholder" data-i18n-attribute="placeholder aria-label" />
+        <button type="submit" class="btn btn-primary" data-i18n="search-button">Qidirish</button>
       </form>
     </div>
   </div>
 
   <div class="lightbox" id="lightbox">
     <div class="lightbox-content">
-      <button class="close-popup" id="lightboxClose" aria-label="Close image"><i class="fas fa-times"></i></button>
+      <button class="close-popup" id="lightboxClose" aria-label="Rasmni yopish" data-i18n="lightbox-close" data-i18n-attribute="aria-label"><i class="fas fa-times"></i></button>
       <img src="" alt="Expanded gallery image" id="lightboxImage" />
       <p id="lightboxCaption"></p>
     </div>
   </div>
 
-  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
-  <button class="float-btn whatsapp-btn" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></button>
-  <button class="float-btn call-btn" aria-label="Call us"><i class="fas fa-phone"></i></button>
+  <button class="back-to-top" id="backToTop" aria-label="Yuqoriga qaytish" data-i18n="back-to-top" data-i18n-attribute="aria-label"><i class="fas fa-chevron-up"></i></button>
+  <button class="float-btn whatsapp-btn" aria-label="WhatsApp orqali yozish" data-i18n="whatsapp-label" data-i18n-attribute="aria-label"><i class="fab fa-whatsapp"></i></button>
+  <button class="float-btn call-btn" aria-label="Bizga qo'ng'iroq qilish" data-i18n="call-label" data-i18n-attribute="aria-label"><i class="fas fa-phone"></i></button>
 
   <script src="{% static 'languages.js' %}"></script>
   <script src="{% static 'script.js' %}"></script>
